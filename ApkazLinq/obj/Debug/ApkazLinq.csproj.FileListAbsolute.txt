@@ -1,0 +1,6 @@
+D:\bawmy się\LINQ\ApkazLinq\ApkazLinq\bin\Debug\ApkazLinq.exe.config
+D:\bawmy się\LINQ\ApkazLinq\ApkazLinq\bin\Debug\ApkazLinq.exe
+D:\bawmy się\LINQ\ApkazLinq\ApkazLinq\bin\Debug\ApkazLinq.pdb
+D:\bawmy się\LINQ\ApkazLinq\ApkazLinq\obj\Debug\ApkazLinq.csprojResolveAssemblyReference.cache
+D:\bawmy się\LINQ\ApkazLinq\ApkazLinq\obj\Debug\ApkazLinq.exe
+D:\bawmy się\LINQ\ApkazLinq\ApkazLinq\obj\Debug\ApkazLinq.pdb
