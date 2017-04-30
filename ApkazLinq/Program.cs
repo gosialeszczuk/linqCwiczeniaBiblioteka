@@ -39,7 +39,47 @@ namespace ApkazLinq
                 Console.WriteLine("Szukana ksiega to: "+ ks1.Tytul);
             }
             Console.ReadKey();
+            /*
+            notacja bez kropeczki
+
+            */
+            var szukajKSiegi =
+                from ksi in MojaBiblioteczka
+                where ksi.Autor == "Lois Lowry"
+                select ksi.Autor;
+        foreach(var ks2 in szukajKSiegi)
+            {
+                Console.WriteLine("Szukany autor to: " + ks2);
+            }
+            Console.ReadKey();
+
+            //posortujemy tytuły książek
+
+            var sortowankoKsiazek = MojaBiblioteczka.Select(n => n.Autor).ToArray().OrderBy(b => b);
+
+            foreach(var ks3 in sortowankoKsiazek)
+            {
+                Console.WriteLine("posortowane: " + ks3);
+            }
+
+            var sortowankoKsiazekpo2015 = MojaBiblioteczka.Select(n => n).Where(n => n.RokWydania >= 2015).ToList();
+
+            var sortowanieKsiagW = MojaBiblioteczka.Select(n => n).Where(n => n.RokWydania < 2006).ToList();
+
+            Console.WriteLine("Ksiazki napisane w 2015 i po ..: ");
+            foreach (var ks4 in sortowankoKsiazekpo2015)
+            {
+                Console.WriteLine(ks4.RokWydania +" "+ ks4.Tytul);
+            }
+
+            foreach (var ks5 in sortowanieKsiagW)
+            {
+                Console.WriteLine("Szukana ksiazka to: " + ks5.Tytul + " napisana w :" + ks5.RokWydania);
+            }
+            Console.ReadKey();
 
         }
+
+
     }
 }
